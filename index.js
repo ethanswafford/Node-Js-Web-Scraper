@@ -1,13 +1,17 @@
+// variable declarations and required node modules 
+
 const express = require(express);
 const PORT = 8000
 const cheerio = require(cheerio);
 const axios = require(axios);
-const cors = require ('cors')
-app.use (cors())
+const cors = require('cors')
+app.use(cors())
 
-let  url = 'https://www.google.com/'
+let url = 'https://www.google.com/'
 
-app.get('/', function(req, res){
+// start
+
+app.get('/', function (req, res) {
     res.json("NODE.JS Web Scraper")
 })
 
